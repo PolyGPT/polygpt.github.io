@@ -17,24 +17,69 @@
         margin: 0px;
         padding: 0px;
       }
+      .poly-container {
+        height: 100vh;
+      }
+      .poly-site {
+        max-width: 42em;
+      }
+      .nav-masthead .nav-link {
+        color: rgba(255, 255, 255, .5);
+        border-bottom: .25rem solid transparent;
+      }
+      /*
+      * Header
+      */
+
+      .nav-masthead .nav-link {
+        color: rgba(255, 255, 255, .5);
+        border-bottom: .25rem solid transparent;
+      }
+
+      .nav-masthead .nav-link:hover,
+      .nav-masthead .nav-link:focus {
+        border-bottom-color: rgba(255, 255, 255, .25);
+      }
+
+      .nav-masthead .nav-link + .nav-link {
+        margin-left: 1rem;
+      }
+
+      .nav-masthead .active {
+        color: #fff;
+        border-bottom-color: #fff;
+      }
     </style>
   </head>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root">
-      <div class="container-fluid">
-        <main class="px-3">
-          <h1>PolyGPT.</h1>
-          <p class="lead">Login chatGPT</p>
-          <p class="lead">
-            <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white">Learn more</a>
-          </p>
-        </main>
-      
-        <footer class="mt-auto text-white-50">
-          <p>PolyGPT</p>
-        </footer>
+      <div class="poly-container text-center text-bg-dark">
+        <div class="poly-site d-flex w-100 h-100 p-3 mx-auto flex-column h-100">
+          <header class="mb-auto">
+            <div>
+              <h3 class="float-md-start mb-0">PolyGPT</h3>
+              <!-- <nav class="nav nav-masthead justify-content-center float-md-end">
+                <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#"></a>
+                <a class="nav-link fw-bold py-1 px-0" href="#">Features</a>
+                <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
+              </nav> -->
+            </div>
+          </header>
+          <main class="px-3 pt-5">
+            <h1>Poly GPT Install</h1>
+            <p class="lead">Install guide</p>
+            <p class="lead">
+              <a href="https://chat.openai.com/" class="btn btn-lg btn-light fw-bold border-white bg-white" target="_blank">Install PolyGPT</a>
+              <a href="https://chat.openai.com/" class="btn btn-lg btn-light fw-bold border-white bg-white" target="_blank">Login ChatGPT</a>
+            </p>
+          </main>
+        
+          <footer class="mt-auto text-white-50">
+            <p>PolyGPT</p>
+          </footer>
+        </div>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
