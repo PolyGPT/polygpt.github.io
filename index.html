@@ -4,12 +4,11 @@
     <meta charset="utf-8" />
     <link rel="icon" href="assets/poly-34.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="PolyGPT"
     />
-    <link rel="apple-touch-icon" href="public/logo192.png" />
+    <link rel="apple-touch-icon" href="public/poly-34.png" />
     <title>PolyGPT</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <style>
@@ -20,64 +19,136 @@
       .poly-container {
         height: 100vh;
       }
-      .poly-site {
-        max-width: 42em;
-      }
-      .nav-masthead .nav-link {
-        color: rgba(255, 255, 255, .5);
-        border-bottom: .25rem solid transparent;
-      }
-      /*
-      * Header
-      */
-
-      .nav-masthead .nav-link {
-        color: rgba(255, 255, 255, .5);
-        border-bottom: .25rem solid transparent;
-      }
-
-      .nav-masthead .nav-link:hover,
-      .nav-masthead .nav-link:focus {
-        border-bottom-color: rgba(255, 255, 255, .25);
-      }
-
-      .nav-masthead .nav-link + .nav-link {
-        margin-left: 1rem;
-      }
-
-      .nav-masthead .active {
-        color: #fff;
-        border-bottom-color: #fff;
-      }
     </style>
   </head>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root">
-      <div class="poly-container text-center text-bg-dark">
-        <div class="poly-site d-flex w-100 h-100 p-3 mx-auto flex-column h-100">
-          <header class="mb-auto">
-            <div>
-              <h3 class="float-md-start mb-0">PolyGPT</h3>
-              <!-- <nav class="nav nav-masthead justify-content-center float-md-end">
-                <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#"></a>
-                <a class="nav-link fw-bold py-1 px-0" href="#">Features</a>
-                <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
-              </nav> -->
-            </div>
+      <div class="poly-container">
+        <div class="col-lg-10 mx-auto p-4 py-md-5">
+          <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+            <!-- <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none" target="_blank"> -->
+              <img src="/assets/poly-34.png" style="width:64px; height: 64px;">
+              <span class="fs-4 mx-2">PolyGPT</span>
+            <!-- </a> -->
           </header>
-          <main class="px-3 pt-5">
-            <h1>Poly GPT Install</h1>
-            <p class="lead">Install guide</p>
-            <p class="lead">
-              <a href="https://chat.openai.com/" class="btn btn-lg btn-light fw-bold border-white bg-white" target="_blank">Install PolyGPT</a>
-              <a href="https://chat.openai.com/" class="btn btn-lg btn-light fw-bold border-white bg-white" target="_blank">Login ChatGPT</a>
-            </p>
-          </main>
         
-          <footer class="mt-auto text-white-50">
-            <p>PolyGPT</p>
+          <main>
+            <!-- <h1 class="text-body-emphasis">Get started with Bootstrap</h1> -->
+            <p class="fs-5 col-md-8">
+              PolyGPT와 함께 ChatGPT 와 편하고 효율적으로 대화하세요 - 여러 언어를 구사하는 개인 AI 어시스턴트인 PolyGPT와 함께라면 ChatGPT 와 모국어로 편하게 대화해도 영어로 대화하는 수준의 대화가 가능합니다.
+            </p>
+        
+            <div class="mb-5">
+              <a href="/docs/5.3/examples/" class="btn btn-primary btn-lg px-4">Download PolyGPT Extension</a>
+            </div>
+            <hr class="col-12 col-md-12 mb-12 my-5">
+            <div class="row g-5">
+              <div class="col-md-6">
+                <h2 class="text-body-emphasis">설치</h2>
+                <ol class="ps-0">
+                  <li class="ms-5">크롬 익스텐션 설치 파일인 [poly-gpt-chrome-extension-1.0.0.zip] 를 다운로드하고, 압축해제 합니다.</li>
+                  <li class="ms-5">크롬 브라우저에서 chrome://extensions/ 에 접속합니다.</li>
+                  <li class="ms-5">오른쪽 상단의 [개발자 모드] 부분을 활성화 합니다.</li>
+                  <li class="ms-5">왼쪽 상단의 [압축 해제된 확장 프로그램을 로드합니다] 버튼을 클릭합니다.</li>
+                  <li class="ms-5">1번에서 압축해제한 폴더를 지정하고 [선택] 버튼을 누릅니다.</li>
+                  <li class="ms-5">보고 계신 이 페이지를 새로고침하거나 polygpt.github.io 에 다시 접속합니다.</li>
+                  <li class="ms-5">추후 크롬 웹스토어에 정식 등록되면 훨씬 더 쉽게 설치하실 수 있습니다. 빨리 정식 등록이 될 수 있도록 하겠습니다.</li>
+                </ol>
+              </div>
+              <div class="col-md-6">
+                <h2 class="text-body-emphasis">핵심 기능</h2>
+                <ol class="ps-0">
+                  <li class="ms-5">User 및 Assistant (ChatGPT) 의 언어 종류 자동 인식</li>
+                  <li class="ms-5">인식된 언어 종류에 맞춰 적절한 기계 번역</li>
+                  <li class="ms-5">기계 번역은 구글 번역 뿐만 아니라 DeepL 번역 및 ChatGPT 를 이용한 번역 모두 활용</li>
+                  <li class="ms-5">번역된 내용이 아래쪽이 아니라 옆에 나오도록 함과 동시에 문단 별로 모국어/영어를 정렬하여 가독성 향상</li>
+                  <li class="ms-5">타 Chrome Extention 과의 충돌 원천 방지</li>
+                </ol>
+              </div>
+            </div>
+            <hr class="col-12 col-md-12 mb-12 my-5">
+            <div class="row g-5">
+              <div class="col-md-6">
+                <h2 class="text-body-emphasis">배경</h2>
+                <ol class="ps-0">
+                  <li class="ms-5">현재 한국어를 영어로 자동 번역하여 ChatGPT 를 사용할 수 있도록 하는 ‘프롬프트 지니’ 라는 Chrome Extention 이 있습니다.</li>
+                  <li class="ms-5">이를 주로 많이 사용하였으나 번역 내용이 아래쪽에 나와 가독성이 떨어지는 문제, 구글 번역만 활용할 수 있는 문제, 한글만 가능하다는 문제, 타 Chrome Extention 과 충돌이 발생하는 문제 등으로 인해 활용하기에 불편한 점이 있었습니다.</li>
+                  <li class="ms-5">이에 이러한 문제점을 모두 해결하고자 PolyGPT 라는 서비스를 기획하게 되었습니다.</li>
+                </ol>
+              </div>
+              <div class="col-md-6">
+                <h2 class="text-body-emphasis">기대효과</h2>
+                <ol class="ps-0">
+                  <li class="ms-5">Non-Native English Speaker 가 편하게 모국어로 ChatGPT 를 효율적으로 활용하실 수 있습니다.</li>
+                  <li class="ms-5">영어로 정밀하게 제어하고 싶은 경우에는 그냥 영어로 입력하면 됩니다.</li>
+                  <li class="ms-5">타 Chrome Extention 과의 충돌 없이 편하게 활용 가능합니다.</li>
+                </ol>
+              </div>
+            </div>
+            <hr class="col-12 col-md-12 mb-12 my-5">
+            <div class="row g-5">
+              <div class="col-md-12">
+                <h2 class="text-body-emphasis">기술 세부 내용</h2>
+                <div class="row g-4 row-cols-2 row-cols-lg-2">
+                  <div class="col d-flex align-items-start">
+                    <div>
+                      <h4 class="fs-5">ChatGPT 요청 Queue 구현</h4>
+                      <ol class="ps-0">
+                        <li class="ms-5">현재 ChatGPT web UI 는 여러개 띄워 놓고 동시에 호출하면 에러가 발생함</li>
+                        <li class="ms-5">PolyGPT 는 User 의 ChatGPT 요청 뿐만 아니라 번역 및 언어 인식에도 ChatGPT 를 사용해야 하기 때문에 이는 치명적임</li>
+                        <li class="ms-5">따라서 자체적으로 요청 Queue 를 구현하여 동시 호출 에러를 방지함</li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div class="col d-flex align-items-start">
+                    <div>
+                      <h3 class="fs-5">자동 언어 인식</h3>
+                      <ol class="ps-0">
+                        <li class="ms-5">Chrome 에서 제공하는 Language Detection 기능 사용</li>
+                        <li class="ms-5">실패 시 ChatGPT 를 이용하여 Language Detection</li>
+                        <li class="ms-5">이를 통해 영어는 한글 등 모국어로, 모국어는 영어로 번역</li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div class="col d-flex align-items-start">
+                    <div>
+                      <h3 class="fs-5">기계 번역</h3>
+                      <ol class="ps-0">
+                        <li class="ms-5">구글 번역</li>
+                        <li class="ms-5">DeepL 번역
+                          <ol class="ps-0">
+                            <ul>- 단, DeepL 번역은 구글 번역처럼 직접적으로 활용하는 것은 막아 놓았기에</ul>
+                            <ul>- DeepL Chrome Extention 을 활용하여 편리하게 DeepL 번역을 할 수 있도록 UI 구성</ul>
+                            <ul>- ChatGPT 를 이용한 번역도 제공
+                              <ol class="ps-0">
+                                <ul>단, 길이가 긴 경우에는 제대로 번역이 되지 못하고 짤리는 문제가 다수 발생하기에</ul>
+                                <ul>문단 단위로 하나씩 번역</ul>
+                              </ol>
+                            </ul>
+                          </ol>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div class="col d-flex align-items-start">
+                    <div>
+                      <h3 class="fs-5">자체 UI 구현 (polygpt.github.io)</h3>
+                      <ol class="ps-0">
+                        <li class="ms-5">일반적인 방식인 ChatGPT UI 에 injection 하여 수정하는 방식이 아니라 자체 UI 로 구현</li>
+                        <li class="ms-5">따라서 충돌 문제가 원천적으로 방지됨</li>
+                        <li class="ms-5">또한 번역 내용을 아래쪽이 아니라 옆쪽에 나오도록 구성이 가능</li>
+                        <li class="ms-5">접근성 향상을 위해 ChatGPT 사이트에서 PolyGPT 페이지로 갈 수 있도록 하는 Floating Icon 하나만 injection</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          <footer class="pt-5 my-5 text-body-secondary border-top">
+            Deephigh
           </footer>
         </div>
       </div>
