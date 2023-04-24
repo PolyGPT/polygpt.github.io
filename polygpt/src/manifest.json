@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "PolyGPT",
+  "description": "Enhance your ChatGPT conversations with PolyGPT - your personal AI assistant for multilingual communication.",
+  "background": { "service_worker": "background.bundle.js" },
+  "action": {
+    "default_icon": "poly-34.png"
+  },
+  "icons": {
+    "128": "poly-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://localhost:3001/*",
+        "https://polygpt.github.io/*",
+        "https://chat.openai.com/*"
+      ],
+      "js": ["contentScript.bundle.js"],
+      "css": ["content.styles.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "host_permissions": [
+    "https://chat.openai.com/*",
+    "https://translate.google.com/"
+  ],
+  "permissions": [
+    "webRequest", "alarms", "storage", "unlimitedStorage", "tabs", "management"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["content.styles.css", "poly-128.png", "poly-34.png"],
+      "matches": [
+        "https://polygpt.github.io/*",
+        "http://localhost:3001/*",
+        "https://chat.openai.com/*"
+      ]
+    }
+  ]
+}
