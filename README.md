@@ -142,4 +142,4 @@
 - Can be configured to display translations on the side instead of the bottom
 - For better accessibility, only one floating icon is injected that allows you to navigate to the PolyGPT page from the ChatGPT site.
 
-SSPL license[label](https://www.gnu.org/licenses/agpl-3.0.html)
+[AGPL license](https://www.gnu.org/licenses/agpl-3.0.html)
