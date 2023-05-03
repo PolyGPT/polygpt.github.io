@@ -85,16 +85,20 @@
 <li>타 Chrome Extention 과의 충돌 없이 편하게 활용 가능합니다.</li>
 </ul>
 <h2 id="-">기술 세부 내용</h2>
-<h3 id="chatgpt-queue-">ChatGPT 요청 Queue 구현</h3>
+<h4 id="chatgpt-queue-">ChatGPT 요청 Queue 구현</h4>
 <ul>
 <li>현재 ChatGPT web UI 는 여러개 띄워 놓고 동시에 호출하면 에러가 발생함</li>
 <li>PolyGPT 는 User 의 ChatGPT 요청 뿐만 아니라 번역 및 언어 인식에도 ChatGPT 를 사용해야 하기 때문에 이는 치명적임</li>
-<li>따라서 자체적으로 요청 Queue 를 구현하여 동시 호출 에러를 방지함<h3 id="-">자동 언어 인식</h3>
-</li>
-<li>기본적으로는 Chrome 에서 제공하는 Language Detection 기능 사용</li>
-<li>실패 시 ChatGPT 를 이용하여 Language Detection</li>
-<li>이를 통해 영어는 한글 등 모국어로, 모국어는 영어로 번역<h3 id="-">기계 번역</h3>
-</li>
+<li>따라서 자체적으로 요청 Queue 를 구현하여 동시 호출 에러를 방지함</li>
+</ul>
+<h4 id="-">자동 언어 인식</h4>
+<ul>
+  <li>기본적으로는 Chrome 에서 제공하는 Language Detection 기능 사용</li>
+  <li>실패 시 ChatGPT 를 이용하여 Language Detection</li>
+  <li>이를 통해 영어는 한글 등 모국어로, 모국어는 영어로 번역</li>
+</ul>
+<h4 id="-">기계 번역</h4>
+<ul>
 <li>구글 번역</li>
 <li>DeepL 번역<ul>
 <li>단, DeepL 번역은 구글 번역처럼 직접적으로 활용하는 것은 막아 놓았기에</li>
@@ -155,16 +159,21 @@
 <li>No conflicts with other Chrome extensions.</li>
 </ul>
 <h2 id="technical-details">Technical Details</h2>
-<h3 id="chatgpt-request-queue-implementation">ChatGPT request queue implementation</h3>
+<h4 id="chatgpt-request-queue-implementation">ChatGPT request queue implementation</h4>
 <ul>
 <li>Currently, the ChatGPT web UI causes an error when multiple requests are opened at the same time.</li>
 <li>This is fatal because PolyGPT needs to use ChatGPT not only for user&#39;s ChatGPT requests, but also for translation and language recognition.</li>
-<li>Therefore, we implemented our own request queue to avoid concurrent call errors.<h3 id="automatic-language-recognition">Automatic language recognition</h3>
-</li>
+<li>Therefore, we implemented our own request queue to avoid concurrent call errors.</li>
+</ul>
+<h4 id="automatic-language-recognition">Automatic language recognition</h4>
+<ul>
 <li>By default, we use the Language Detection feature provided by Chrome.</li>
 <li>If it fails, we use ChatGPT to detect the language.</li>
-<li>This translates English to native language, such as Korean, and native language to English.<h3 id="machine-translation">Machine Translation</h3>
+<li>This translates English to native language, such as Korean, and native language to English.
 </li>
+</ul>
+<h4 id="machine-translation">Machine Translation</h4>
+<ul>
 <li>Google Translate</li>
 <li>DeepL translation<ul>
 <li>However, DeepL translation cannot be utilized directly like Google Translate.</li>
