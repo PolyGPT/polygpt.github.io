@@ -64,7 +64,7 @@
   - 단, 길이가 긴 경우에는 제대로 번역이 되지 못하고 짤리는 문제가 다수 발생하기에
   - 문단 단위로 하나씩 번역
 
-### 자체 UI 구현 (polygpt.github.io)
+## 자체 UI 구현 (polygpt.github.io)
 
 - 일반적인 방식인 ChatGPT UI 에 injection 하여 수정하는 방식이 아니라 자체 UI 로 구현
 - 따라서 충돌 문제가 원천적으로 방지됨
@@ -135,7 +135,7 @@
   - However, if the length is long, there are many problems that cannot be translated properly and are truncated.
   - Translate paragraph by paragraph
 
-### Implement your own UI (polygpt.github.io)
+## Implement your own UI (polygpt.github.io)
 
 - We implemented our own UI instead of injecting it into the ChatGPT UI and modifying it in the usual way.
 - This avoids conflicts altogether

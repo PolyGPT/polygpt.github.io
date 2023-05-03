@@ -48,7 +48,7 @@
             <hr class="col-12 col-md-12 mb-12 my-5">
             <div class="row g-5">
               <div class="col-md-6">
-                <h2 id="-">서비스 링크</h2>
+<h2 id="-">서비스 링크</h2>
 <ul>
 <li><a href="https://polygpt.github.io/">https://polygpt.github.io/</a></li>
 <li>주의사항: 아직 크롬 웹스토어에 정식 등록되어 있지 못합니다. 위 URL 에서 확장앱을 직접 다운로드 받아 설치 부탁드립니다. 자세한 사항은 위 사이트에 설명되어 있습니다.</li>
@@ -103,81 +103,87 @@
 </li>
 <li>ChatGPT 를 이용한 번역<ul>
 <li>단, 길이가 긴 경우에는 제대로 번역이 되지 못하고 짤리는 문제가 다수 발생하기에</li>
-<li>문단 단위로 하나씩 번역<h3 id="-ui-polygpt-github-io-">자체 UI 구현 (polygpt.github.io)</h3>
-</li>
+<li>문단 단위로 하나씩 번역</li>
 </ul>
 </li>
+</ul>
+<h2 id="-ui-polygpt-github-io-">자체 UI 구현 (polygpt.github.io)</h2>
+<ul>
 <li>일반적인 방식인 ChatGPT UI 에 injection 하여 수정하는 방식이 아니라 자체 UI 로 구현</li>
 <li>따라서 충돌 문제가 원천적으로 방지됨</li>
 <li>또한 번역 내용을 아래쪽이 아니라 옆쪽에 나오도록 구성이 가능</li>
 <li>접근성 향상을 위해 ChatGPT 사이트에서 PolyGPT 페이지로 갈 수 있도록 하는 Floating Icon 하나만 injection</li>
 </ul>
+
+                
               </div>
               <div class="col-md-6">
                 <h2 id="service-link">Service Link</h2>
-                <ul>
-                <li><a href="https://polygpt.github.io/">https://polygpt.github.io/</a></li>
-                <li>Note: The extension is not yet listed on the Chrome Web Store. Please download and install the extension directly from the above URL. Details are explained on the site above.</li>
-                </ul>
-                <h2 id="install">Install</h2>
-                <ul>
-                <li>Download and extract the Chrome extension installation file [poly-gpt-chrome-extension-1.0.0.zip].</li>
-                <li>Access chrome://extensions/ in the Chrome browser.</li>
-                <li>Enable the [Developer Mode] section in the top right corner.</li>
-                <li>Click the [Load unzipped extension] button on the top left.</li>
-                <li>Specify the folder you extracted in step 1 and press the [Select] button.</li>
-                <li>Refresh this page you are viewing or reconnect to polygpt.github.io.</li>
-                <li>It will be much easier to install once it is officially listed on the Chrome Web Store. We hope to have it listed as soon as possible.</li>
-                <li>(Optional) DeepL chrome extension will also need to be installed in order to translate DeepL.</li>
-                </ul>
-                <h2 id="core-features">Core Features</h2>
-                <ul>
-                <li>Automatically recognizes the language type of the user and assistant (ChatGPT)</li>
-                <li>Appropriate machine translation based on the recognized language type</li>
-                <li>Machine translation utilizes not only Google Translate, but also DeepL translation and translation using ChatGPT.</li>
-                <li>Improved readability by aligning the native language/English per paragraph while keeping the translated content on the side instead of at the bottom.</li>
-                <li>Prevent conflicts with other Chrome extensions at source</li>
-                </ul>
-                <h2 id="background-">Background.</h2>
-                <ul>
-                <li>There is currently a Chrome Extension called &#39;Prompt Genie&#39; that automatically translates Korean to English so that you can use ChatGPT.</li>
-                <li>I used it a lot, but it was inconvenient to use due to the problem that the translation content is displayed at the bottom and is not readable, the problem that only Google Translate can be utilized, the problem that only Korean is available, and the problem that conflicts with other Chrome Extensions.</li>
-                <li>In order to solve all of these problems, we have planned a service called PolyGPT.</li>
-                </ul>
-                <h2 id="expected-benefits">Expected Benefits</h2>
-                <ul>
-                <li>Non-Native English Speakers can easily utilize ChatGPT in their native language.</li>
-                <li>If you want to have precise control in English, you can just type in English.</li>
-                <li>No conflicts with other Chrome extensions.</li>
-                </ul>
-                <h2 id="technical-details">Technical Details</h2>
-                <h3 id="chatgpt-request-queue-implementation">ChatGPT request queue implementation</h3>
-                <ul>
-                <li>Currently, the ChatGPT web UI causes an error when multiple requests are opened at the same time.</li>
-                <li>This is fatal because PolyGPT needs to use ChatGPT not only for user&#39;s ChatGPT requests, but also for translation and language recognition.</li>
-                <li>Therefore, we implemented our own request queue to avoid concurrent call errors.<h3 id="automatic-language-recognition">Automatic language recognition</h3>
-                </li>
-                <li>By default, we use the Language Detection feature provided by Chrome.</li>
-                <li>If it fails, we use ChatGPT to detect the language.</li>
-                <li>This translates English to native language, such as Korean, and native language to English.<h3 id="machine-translation">Machine Translation</h3>
-                </li>
-                <li>Google Translate</li>
-                <li>DeepL translation<ul>
-                <li>However, DeepL translation cannot be utilized directly like Google Translate.</li>
-                <li>Configure the UI so that you can use DeepL Chrome Extension to translate DeepL conveniently.</li>
-                </ul>
-                </li>
-                <li>Translation using ChatGPT<ul>
-                <li>However, if the length is long, there are many problems that cannot be translated properly and are truncated.</li>
-                <li>Translate paragraph by paragraph<h3 id="implement-your-own-ui-polygpt-github-io-">Implement your own UI (polygpt.github.io)</h3>
-                </li>
-                </ul>
-                </li>
-                <li>We implemented our own UI instead of injecting it into the ChatGPT UI and modifying it in the usual way.</li>
-                <li>This avoids conflicts altogether</li>
-                <li>Can be configured to display translations on the side instead of the bottom</li>
-                <li>For better accessibility, only one floating icon is injected that allows you to navigate to the PolyGPT page from the ChatGPT site.</li>
-                </ul>
+<ul>
+<li><a href="https://polygpt.github.io/">https://polygpt.github.io/</a></li>
+<li>Note: The extension is not yet listed on the Chrome Web Store. Please download and install the extension directly from the above URL. Details are explained on the site above.</li>
+</ul>
+<h2 id="install">Install</h2>
+<ul>
+<li>Download and extract the Chrome extension installation file [poly-gpt-chrome-extension-1.0.0.zip].</li>
+<li>Access chrome://extensions/ in the Chrome browser.</li>
+<li>Enable the [Developer Mode] section in the top right corner.</li>
+<li>Click the [Load unzipped extension] button on the top left.</li>
+<li>Specify the folder you extracted in step 1 and press the [Select] button.</li>
+<li>Refresh this page you are viewing or reconnect to polygpt.github.io.</li>
+<li>It will be much easier to install once it is officially listed on the Chrome Web Store. We hope to have it listed as soon as possible.</li>
+<li>(Optional) DeepL chrome extension will also need to be installed in order to translate DeepL.</li>
+</ul>
+<h2 id="core-features">Core Features</h2>
+<ul>
+<li>Automatically recognizes the language type of the user and assistant (ChatGPT)</li>
+<li>Appropriate machine translation based on the recognized language type</li>
+<li>Machine translation utilizes not only Google Translate, but also DeepL translation and translation using ChatGPT.</li>
+<li>Improved readability by aligning the native language/English per paragraph while keeping the translated content on the side instead of at the bottom.</li>
+<li>Prevent conflicts with other Chrome extensions at source</li>
+</ul>
+<h2 id="background-">Background.</h2>
+<ul>
+<li>There is currently a Chrome Extension called &#39;Prompt Genie&#39; that automatically translates Korean to English so that you can use ChatGPT.</li>
+<li>I used it a lot, but it was inconvenient to use due to the problem that the translation content is displayed at the bottom and is not readable, the problem that only Google Translate can be utilized, the problem that only Korean is available, and the problem that conflicts with other Chrome Extensions.</li>
+<li>In order to solve all of these problems, we have planned a service called PolyGPT.</li>
+</ul>
+<h2 id="expected-benefits">Expected Benefits</h2>
+<ul>
+<li>Non-Native English Speakers can easily utilize ChatGPT in their native language.</li>
+<li>If you want to have precise control in English, you can just type in English.</li>
+<li>No conflicts with other Chrome extensions.</li>
+</ul>
+<h2 id="technical-details">Technical Details</h2>
+<h3 id="chatgpt-request-queue-implementation">ChatGPT request queue implementation</h3>
+<ul>
+<li>Currently, the ChatGPT web UI causes an error when multiple requests are opened at the same time.</li>
+<li>This is fatal because PolyGPT needs to use ChatGPT not only for user&#39;s ChatGPT requests, but also for translation and language recognition.</li>
+<li>Therefore, we implemented our own request queue to avoid concurrent call errors.<h3 id="automatic-language-recognition">Automatic language recognition</h3>
+</li>
+<li>By default, we use the Language Detection feature provided by Chrome.</li>
+<li>If it fails, we use ChatGPT to detect the language.</li>
+<li>This translates English to native language, such as Korean, and native language to English.<h3 id="machine-translation">Machine Translation</h3>
+</li>
+<li>Google Translate</li>
+<li>DeepL translation<ul>
+<li>However, DeepL translation cannot be utilized directly like Google Translate.</li>
+<li>Configure the UI so that you can use DeepL Chrome Extension to translate DeepL conveniently.</li>
+</ul>
+</li>
+<li>Translation using ChatGPT<ul>
+<li>However, if the length is long, there are many problems that cannot be translated properly and are truncated.</li>
+<li>Translate paragraph by paragraph</li>
+</ul>
+</li>
+</ul>
+<h2 id="implement-your-own-ui-polygpt-github-io-">Implement your own UI (polygpt.github.io)</h2>
+<ul>
+<li>We implemented our own UI instead of injecting it into the ChatGPT UI and modifying it in the usual way.</li>
+<li>This avoids conflicts altogether</li>
+<li>Can be configured to display translations on the side instead of the bottom</li>
+<li>For better accessibility, only one floating icon is injected that allows you to navigate to the PolyGPT page from the ChatGPT site.</li>
+</ul>
               </div>
             </div>
           </main>
