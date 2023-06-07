@@ -26,7 +26,7 @@
 
 ## 배경
 
-- 현재 한국어를 영어로 자동 번역하여 ChatGPT 를 사용할 수 있도록 하는 ‘프롬프트 지니’ 라는 Chrome Extention 이 있습니다.
+- 현재 한국어를 영어로 자동 번역하여 ChatGPT 를 사용할 수 있도록 하는 Chrome Extention 들이 있습니다.
 - 이를 주로 많이 사용하였으나 번역 내용이 아래쪽에 나와 가독성이 떨어지는 문제, 구글 번역만 활용할 수 있는 문제, 한글만 가능하다는 문제, 타 Chrome Extention 과 충돌이 발생하는 문제 등으로 인해 활용하기에 불편한 점이 있었습니다.
 - 이에 이러한 문제점을 모두 해결하고자 PolyGPT 라는 서비스를 만들게 되었습니다.
 
@@ -93,7 +93,7 @@
 
 ## Background.
 
-- There is currently a Chrome Extension called 'Prompt Genie' that automatically translates Korean to English so that you can use ChatGPT.
+- There is currently Chrome Extensions that automatically translates Korean to English so that you can use ChatGPT.
 - I used it a lot, but it was inconvenient to use due to the problem that the translation content is displayed at the bottom and is not readable, the problem that only Google Translate can be utilized, the problem that only Korean is available, and the problem that conflicts with other Chrome Extensions.
 - In order to solve all of these problems, we have planned a service called PolyGPT.
 
