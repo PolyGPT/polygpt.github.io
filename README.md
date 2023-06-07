@@ -7,18 +7,14 @@
 ## 서비스 링크
 
 - https://polygpt.github.io/
-- 주의사항: 아직 크롬 웹스토어에 정식 등록되어 있지 못합니다. 위 URL 에서 확장앱을 직접 다운로드 받아 설치 부탁드립니다. 자세한 사항은 위 사이트에 설명되어 있습니다.
 
 ## 설치
 
-- 크롬 익스텐션 설치 파일인 [poly-gpt-chrome-extension-1.0.0.zip] 를 다운로드하고, 압축해제 합니다.
-- 크롬 브라우저에서 chrome://extensions/ 에 접속합니다.
-- 오른쪽 상단의 [개발자 모드] 부분을 활성화 합니다.
-- 왼쪽 상단의 [압축 해제된 확장 프로그램을 로드합니다] 버튼을 클릭합니다.
-- 1번에서 압축해제한 폴더를 지정하고 [선택] 버튼을 누릅니다.
-- 보고 계신 이 페이지를 새로고침하거나 polygpt.github.io 에 다시 접속합니다.
-- 추후 크롬 웹스토어에 정식 등록되면 훨씬 더 쉽게 설치하실 수 있습니다. 빨리 정식 등록이 될 수 있도록 하겠습니다.
-- (Optional) DeepL 번역을 하려면 DeepL chrome extention 도 추가로 설치가 필요합니다.
+- 다음 URL 에 접속합니다
+  * https://chrome.google.com/webstore/detail/polygpt/gahbjcodjplfadaokiajkgbkpeeeoegk
+- 오른쪽 상단 파란색의 [Chrome에 추가] 버튼을 눌러 설치합니다.
+- 설치하면 자동으로 https://polygpt.github.io/ 페이지가 뜹니다.
+- 이후 ChatGPT 사이트 로그인 등이 필요할 수 있는데, 이는 상기 페이지의 안내를 따라주시면 됩니다.
 
 ## 핵심 기능
 
@@ -32,7 +28,7 @@
 
 - 현재 한국어를 영어로 자동 번역하여 ChatGPT 를 사용할 수 있도록 하는 ‘프롬프트 지니’ 라는 Chrome Extention 이 있습니다.
 - 이를 주로 많이 사용하였으나 번역 내용이 아래쪽에 나와 가독성이 떨어지는 문제, 구글 번역만 활용할 수 있는 문제, 한글만 가능하다는 문제, 타 Chrome Extention 과 충돌이 발생하는 문제 등으로 인해 활용하기에 불편한 점이 있었습니다.
-- 이에 이러한 문제점을 모두 해결하고자 PolyGPT 라는 서비스를 기획하게 되었습니다.
+- 이에 이러한 문제점을 모두 해결하고자 PolyGPT 라는 서비스를 만들게 되었습니다.
 
 ## 기대효과
 
@@ -78,18 +74,14 @@
 ## Service Link
 
 - https://polygpt.github.io/
-- Note: The extension is not yet listed on the Chrome Web Store. Please download and install the extension directly from the above URL. Details are explained on the site above.
 
 ## Install
 
-- Download and extract the Chrome extension installation file [poly-gpt-chrome-extension-1.0.0.zip].
-- Access chrome://extensions/ in the Chrome browser.
-- Enable the [Developer Mode] section in the top right corner.
-- Click the [Load unzipped extension] button on the top left.
-- Specify the folder you extracted in step 1 and press the [Select] button.
-- Refresh this page you are viewing or reconnect to polygpt.github.io.
-- It will be much easier to install once it is officially listed on the Chrome Web Store. We hope to have it listed as soon as possible.
-- (Optional) DeepL chrome extension will also need to be installed in order to translate DeepL.
+- Connect to the following URL
+  * https://chrome.google.com/webstore/detail/polygpt/gahbjcodjplfadaokiajkgbkpeeeoegk
+- Click the blue "Add to Chrome" button in the top right corner to install.
+- After installation, you will be automatically redirected to https://polygpt.github.io/.
+- You may then need to log in to the ChatGPT site, which you can do by following the instructions on the page above.
 
 ## Core Features
 
